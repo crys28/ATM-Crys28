@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ATM@Crys28</title>
+</head>
+<body>
+    <div class="welcome">
+        <div>
+        <img src="assets\img\upet.png" width="75px" height="75px">
+    </div>
+  
+        <h1>Welcome to my ATM</h1>
+   
+    <div>
+        <img src="assets\img\ime.png" width="75px" height="75px">
+    </div>
+    </div> 
+
+    <div class="users">
+        <div class="see_users">
+            <button id="see_users" onclick="see_users()">See users</button>
+            
+        </div>   
+    
+        <div id="list">
+            <ul>
+                <li>User - Crys ; Password - 1111</li>
+                <li>User - Marshall ; Password - 2222</li>
+            </ul>
+            <ul>
+                <li>User - Xavier ; Password - 3333</li>
+                <li>User - Diego ; Password - 4444</li>
+            </ul>
+            
+            <button id="close" onclick="close_list()">&#10060 Close &#10060</button>
+           
+        </div>
+        
+    </div>
+
+    <div class="login">
+        <div>
+        <h3>Please log in</h3>
+        </div>
+
+        <div class="inputs">
+        <input id="user" type="text" placeholder="User..." required>
+        <input id="pass" type="password" placeholder="Password..." required>
+        <!-- <a id="submitBtn">Log in</a> -->
+        <button onclick="link();checkPass()" id="submitBtn">Log in</button>
+        <p id="counter">1</p>
+        <p id="wrong_message">Wrong login credentials !</p>
+        </div>  
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <h7>&#128187 Made by @Cristian Iacomachi &#128187</h7>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

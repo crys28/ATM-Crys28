@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ATM@Crys28</title>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome Marshall</h1>
+    </div> 
+    
+    <div class="div_menu">
+        <div class="menu">
+
+        <ol id="menu_list">
+            <li onclick="balance()">Show Balance</li>
+            <li onclick="withdraw()">Withdraw</li>
+            <li onclick="deposit()">Deposit</li>
+            <li onclick="quit()">Quit</li>
+        </ol>
+        
+<!-- /****************MENU OPTIONS**************/ -->
+
+
+<!-- /***************BALANCE**********/ -->
+        <div id="balance">
+            <p>Your balance in $:</p>
+            <p id="money">28000</p>
+            <button class="close" onclick="back()">Back</button>
+        </div>
+<!-- /********************************/     -->
+
+
+<!-- /***********WITHDRAW***********/ -->
+        <div id="withdraw">
+            <p>Enter the amount to withdraw in $:</p>
+            <input type="text" id="money_withdraw" placeholder="$$$">
+            <div>
+                <button id="withdrawBtn" onclick="getMoney()">Withdraw</button>
+            </div>                 
+            <div>    
+                <button class="close" onclick="back()">Back</button>
+            </div>      
+    </div>
+
+    <!-- /***TEXT_AFTER_WITHDRAWL***/ -->
+    <div id="text_after">
+        <div>Amount withdrawed: </div>
+        <div id="amount_withdrawed"></div>
+        <div>Your balance now: </div>
+        <div id="money_after"></div>
+        <div>    
+            <button class="close" onclick="back_withdraw()">Back</button>
+            </div>
+    </div>
+<!-- /************************************/ -->
+
+
+<!-- /********DEPOSIT**********/ -->
+
+<div id="deposit">
+    <p>Enter the amount to deposit in $:</p>
+    <input type="text" id="money_deposit" placeholder="$$$">
+    <div>
+        <button id="depositBtn" onclick="depositMoney()">Deposit</button>
+    </div>                 
+    <div>    
+        <button class="close" onclick="back()">Back</button>
+    </div>      
+</div>
+
+<!-- /***TEXT_AFTER_deposit***/ -->
+<div id="text_after_deposit">
+<div>Amount deposited: </div>
+<div id="amount_deposited"></div>
+<div>Your balance now: </div>
+<div id="money_after_deposit"></div>
+<div>    
+    <button class="close" onclick="back_deposit()">Back</button>
+    </div>
+</div>
+<!-- /************************************/ -->
+
+
+
+
+
+
+    </div> <!-- /**MENU**/ -->
+
+    </div> <!-- /**DIV_MENU***/ -->
+
+
+
+    
+    <div class="footer">
+        <h7>&#128187 Made by @Cristian Iacomachi &#128187</h7>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

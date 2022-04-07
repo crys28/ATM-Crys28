@@ -1,0 +1,301 @@
+body{
+    background-color: #00635D;
+    font-family: sans-serif;
+}
+
+/*********WELCOME***********/
+.welcome{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+    border-radius: 50vw;
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+
+h1{
+    width: 65%;
+    background-color: darkkhaki;
+    opacity: 0.8;
+    height: auto;
+    border: 3px solid darkgoldenrod;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 1%;
+    cursor: default;
+
+}
+
+/*******SEE USERS*******/
+
+.users{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button#see_users{
+    background-color: darkkhaki;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2.8vw;
+    cursor: pointer;
+    margin-bottom: 1px;
+    transition: 0.3s;
+}
+
+button#see_users:hover{
+    background-color: darkgoldenrod;
+}
+button#close{
+    background-color: darkkhaki;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+button#close:hover{
+    background-color: #DD7373;
+}
+
+.close{
+    background-color: darkkhaki;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 3%;
+}
+
+.close:hover{
+    background-color: #DD7373;
+}
+
+
+#list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+    opacity: 0;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    transition: 0.3s;
+}
+
+
+/*********LOGIN***********/
+#counter{
+    display: none;
+}
+
+.login{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.inputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+input{
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 5vw;
+    background-color: darkkhaki;
+}
+
+h3{
+    margin-top: 30%;
+    text-align: center;
+    color: darkgoldenrod;
+    cursor: default;
+    border-bottom: 2px solid darkgoldenrod;
+    border-top: 2px solid darkgoldenrod;
+}
+
+
+button#submitBtn{
+    background-color: darkgoldenrod;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2.8vw;
+    cursor: pointer;
+    margin-bottom: 1px;
+    transition: 0.3s;
+    padding: 1%;
+}
+
+button#submitBtn:hover{
+    background-color:darkkhaki;
+}
+
+
+#wrong_message{
+    font-weight: bold;
+    /* position: absolute; */
+    opacity: 0;
+    text-align: center;
+    width: 40%; 
+    height: auto;
+    background-color: darkred;
+    padding: 1%;
+    cursor: default;
+    border-radius: 3vw;
+}
+
+
+
+/********USERS*********/
+
+.div_menu{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: 50%;
+    height: 70%;
+    border: 5px solid darkgoldenrod;
+    background-color: khaki;
+    font-size: 30px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#menu_list{
+    position: absolute;
+}
+
+#menu_list li{
+  position: relative;  
+ margin-bottom: 5%;
+ margin-top: 5%;
+ cursor: pointer;
+}
+
+#menu_list li:hover{
+    background-color: darkgoldenrod;
+}
+
+/****CRYS*****/
+
+
+
+#balance{
+    position: absolute;
+    top: -500px;
+    text-align: center;
+}
+
+#withdraw{
+    position: absolute;
+    top: -500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#money_withdraw{
+    text-align: center;
+    padding: 4%;
+    font-size: large;
+    width: 50%;
+}
+
+button#withdrawBtn{
+    background-color: khaki;
+}
+
+button#withdrawBtn:hover{
+    background-color: darkgoldenrod;
+}
+
+#text_after{
+    position: absolute;
+    top: -500px;
+    text-align: center;
+}
+
+
+#deposit{
+    position: absolute;
+    top: -500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#money_deposit{
+    text-align: center;
+    padding: 4%;
+    font-size: large;
+    width: 50%;
+}
+
+button#depositBtn{
+    background-color: khaki;
+}
+
+button#depositBtn:hover{
+    background-color: darkgoldenrod;
+}
+
+#text_after_deposit{
+    position: absolute;
+    top: -500px;
+    text-align: center;
+}
+
+
+
+
+/*****FOOTER******/
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   border-top: 1px solid grey;
+   background-color: black;
+   color: #00635D;
+   padding: 1%;
+   text-align: center;
+}
+
